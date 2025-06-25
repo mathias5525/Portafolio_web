@@ -150,7 +150,6 @@ a{
     font-weight: bold;
     border: 2px solid #2d0d86;
     padding: 10px;
-
 }
 .resumen .contenido-seccion .info .col table{
     margin-top: 30px; /*margen superior*/
@@ -274,6 +273,19 @@ a{
     flex-direction: column; /*los elementos se alinean en columna*/
     align-items: center; /*centro los elementos horizontalmente*/
     margin-top: 20px; /*margen superior*/
+    width: 100%; /* ocupa todo el ancho disponible */
+    padding: 0 20px; /* margen lateral interno para que no toque los bordes */
+    box-sizing: border-box; /* incluye el padding dentro del ancho total */
+}
+/* Ajuste de inputs y botones dentro del formulario */
+.contacto .contenido-seccion .formulario input,
+.contacto .contenido-seccion .formulario textarea,
+.contacto .contenido-seccion .formulario button {
+    width: 100%; 
+    max-width: 500px; /* ancho máximo para mantener buena lectura */
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
 }
 .contacto .contenido-seccion .fila{
     display: flex; /*para que los elementos se alineen en fila*/
@@ -438,6 +450,10 @@ a{
 
   .iconos a {
     font-size: 26px;
+  }
+    
+  .contacto .contenido-seccion .formulario {
+    padding: 0 40px;  
   }
 
   .contacto .contenido-seccion footer {
